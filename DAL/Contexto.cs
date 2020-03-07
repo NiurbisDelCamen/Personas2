@@ -8,7 +8,7 @@ namespace Persona2.DAL
 {
    public  class Contexto :DbContext
     {
-        DbSet<Personas> Personas { get; set; }
+       public  DbSet<Personas> Personas { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(@"DataSource = Registrodb");
