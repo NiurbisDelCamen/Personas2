@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Persona2.UI.Registros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,8 @@ namespace Persona2
         public MainWindow()
         {
             InitializeComponent();
+            rPersonas r = new rPersonas();
+            r.Show();
         }
     }
 }
