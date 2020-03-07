@@ -125,12 +125,12 @@ namespace Persona2.UI.Registros
             int id;
             int.TryParse(IdTextBox.Text, out id);
             Personas persona = new Personas();
-
+            Limpiar();
             persona = PersonasBLL.Buscar(id);
             if (persona != null)
             {
-                
-                Limpiar();
+
+                LlenaCampo(persona);
             }
             else
             {
